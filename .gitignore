@@ -1,0 +1,54 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# generated Prisma client
+/app/generated/prisma
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files — YE SABSE IMPORTANT HAI (blocks .env, .env.local, .env.production, etc.)
+.env*
+
+# real credential files
+drive-service-account.json
+drive-service-account.json.json
+
+# migration artifacts — bade files, secrets nahi par zaroorat bhi nahi
+/sem1_local/
+migration_report.json
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+node_modules/
+paperverse-migration/node_modules/

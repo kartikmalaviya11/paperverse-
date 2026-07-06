@@ -1,0 +1,75 @@
+datasource db {
+  provider  = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ... baaki saari tables (User, Subject, etc.) waisi hi rahengi ...
+
+// 1. Users Table (Student Profile)
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  scores    UserScore[]
+}
+
+// 2. BCA Subjects Table (Semester 1 to 6)
+model Subject {
+  id        String   @id @default(uuid())
+  name      String
+  code      String   @unique // e.g., BCA-601
+  semester  Int      // 1, 2, 3, 4, 5, 6
+  createdAt DateTime @default(now())
+
+  // Relations
+  papers    Paper[]
+  questions McqQuestion[]
+}
+
+// 3. Previous Year Question Papers Table
+model Paper {
+  id        String   @id @default(uuid())
+  year      Int      // e.g., 2022, 2024
+  fileUrl   String   // PDF Document secure link
+  subjectId String
+  createdAt DateTime @default(now())
+
+  // Relations
+  subject   Subject  @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+}
+
+// 4. MCQ Practice Questions Table
+model McqQuestion {
+  id            String   @id @default(uuid())
+  questionText  String
+  optionA       String
+  optionB       String
+  optionC       String
+  optionD       String
+  correctOption String   // "A", "B", "C", ya "D"
+  subjectId     String
+  createdAt     DateTime @default(now())
+
+  // Relations
+  subject       Subject  @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+}
+
+// 5. MCQ Student Scores tracking Table
+model UserScore {
+  id          String   @id @default(uuid())
+  userId      String
+  subjectCode String
+  score       Int      // User ne kitne marks score kiye
+  totalMarks  Int      // Total kitne marks ka test tha
+  createdAt   DateTime @default(now())
+
+  // Relations
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
