@@ -1,6 +1,10 @@
 generator client {
   provider = "prisma-client-js"
 }
+datasource db {
+  provider  = "postgresql"
+}
+
 
 // ... baaki saari tables (User, Subject, etc.) waisi hi rahengi ...
 
