@@ -4,6 +4,7 @@ import React, { useState, useEffect, memo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { createClient } from "@/utils/supabase/client";
 import { 
   Search, BookOpen, Database, Cpu, 
   ChevronDown, ArrowRight, CheckCircle2, 
@@ -85,9 +86,14 @@ FAQItem.displayName = "FAQItem";
 
 
 const Navbar = memo(() => {
-  // Login disabled successfully to avoid errors for now
-  const handleLoginClick = () => {
-    alert("Login is currently disabled. Please browse semesters directly!");
+  const handleLoginClick = async () => {
+    const supabase = createClient();
+    await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: `${window.location.origin}/auth/callback`,
+      },
+    });
   };
 
   const handleGetStarted = () => {
