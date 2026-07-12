@@ -1,0 +1,956 @@
+[
+  {
+    "driveFileId": "1akFuxLx546WZBso4PK4OD-nlUcqxa4XR",
+    "originalFilename": "406-PRACTICAL 3.pdf",
+    "year": 2015,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 3",
+    "folderName": "2015-MARCH"
+  },
+  {
+    "driveFileId": "1yVwWMNiM-U8R7gaPgTAR8gEIhOkijkC6",
+    "originalFilename": "402-SW ENGINEERING-II.pdf",
+    "year": 2015,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "402-SW ENGINEERING-II",
+    "folderName": "2015-MARCH"
+  },
+  {
+    "driveFileId": "14Z6rzfiKNKx26OjyYcAotoNcRfygXgm8",
+    "originalFilename": "406-PRACTICAL 2.pdf",
+    "year": 2015,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 2",
+    "folderName": "2015-MARCH"
+  },
+  {
+    "driveFileId": "1J-K0a_qCSsn01GsFi5Fu6nTZJ9HhpzOB",
+    "originalFilename": "405-WEB DESIGNING.pdf",
+    "year": 2015,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "405-WEB DESIGNING",
+    "folderName": "2015-MARCH"
+  },
+  {
+    "driveFileId": "1NZj3ZHj0XcYvmfFX9UAUuCaCn4H_-w6R",
+    "originalFilename": "403-JAVA PROGRAMMIMNG LANG.pdf",
+    "year": 2015,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "403-JAVA PROGRAMMIMNG LANG",
+    "folderName": "2015-MARCH"
+  },
+  {
+    "driveFileId": "1nmM0imMwEiexsbtQkt-35wWK3Wzm2aIb",
+    "originalFilename": "404-.NET PROGRAMMING.pdf",
+    "year": 2015,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "404-.NET PROGRAMMING",
+    "folderName": "2015-MARCH"
+  },
+  {
+    "driveFileId": "1R9uvutRVwhbij5Y14yzlQ_-kvqtlcnmY",
+    "originalFilename": "406-PRACTICAL 1.pdf",
+    "year": 2015,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 1",
+    "folderName": "2015-MARCH"
+  },
+  {
+    "driveFileId": "1zQt96xavQzOkVTA1jrY46952-D-mCLoP",
+    "originalFilename": "401-INFORMATION SYSTEM.pdf",
+    "year": 2015,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "401-INFORMATION SYSTEM",
+    "folderName": "2015-MARCH"
+  },
+  {
+    "driveFileId": "15dWREPE72RWngdRCHnikSzUJTvCaRXlP",
+    "originalFilename": "401-INFORMATION SYSTEM.pdf",
+    "year": 2016,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "401-INFORMATION SYSTEM",
+    "folderName": "2016-OCT"
+  },
+  {
+    "driveFileId": "1inymh8W05aBLMiCWX45_ViSyoJDa9ZFL",
+    "originalFilename": "404-.NET PROGRAMMING.pdf",
+    "year": 2016,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "404-.NET PROGRAMMING",
+    "folderName": "2016-OCT"
+  },
+  {
+    "driveFileId": "12zALkqJNy1SebThMcF3efrmTYeNWTKAE",
+    "originalFilename": "403-JAVA PROGAMMING LANG.pdf",
+    "year": 2016,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "403-JAVA PROGAMMING LANG",
+    "folderName": "2016-OCT"
+  },
+  {
+    "driveFileId": "1gbzfjdMGfurWlSJS65zKLbzhduDcq_vu",
+    "originalFilename": "405-WEB DESIGNING.pdf",
+    "year": 2016,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "405-WEB DESIGNING",
+    "folderName": "2016-OCT"
+  },
+  {
+    "driveFileId": "1xQ_VxkJ3-jpzTTJu5clcivXiFEs1jXCj",
+    "originalFilename": "402-SW ENGINEERING-II.pdf",
+    "year": 2016,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "402-SW ENGINEERING-II",
+    "folderName": "2016-OCT"
+  },
+  {
+    "driveFileId": "13gLj7iJxfQK8uJLewp6ErUL5KW4SYj6X",
+    "originalFilename": "403-JAVA PROGRAMMING LANG (NEW).pdf",
+    "year": 2016,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "403-JAVA PROGRAMMING LANG",
+    "folderName": "2016-MARCH"
+  },
+  {
+    "driveFileId": "1sMBwaQZLl1fw4m1Vi7PRKIjhzjWDYiAC",
+    "originalFilename": "405-WEB DESIGNING (OLD).pdf",
+    "year": 2016,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "405-WEB DESIGNING",
+    "folderName": "2016-MARCH"
+  },
+  {
+    "driveFileId": "1TxK2ATCaWVK8su269Zl6i8Z2NJvlgeOw",
+    "originalFilename": "402-SW ENGINEERING (OLD).pdf",
+    "year": 2016,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "402-SW ENGINEERING",
+    "folderName": "2016-MARCH"
+  },
+  {
+    "driveFileId": "1LLJTzayQlAKI-3NCEdUZcZz6l9yTHzKK",
+    "originalFilename": "401-INFORMATION SYSTEM (NEW).pdf",
+    "year": 2016,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "401-INFORMATION SYSTEM",
+    "folderName": "2016-MARCH"
+  },
+  {
+    "driveFileId": "1rjmb_AKwrPLrHVksibHxVKIQpyte4njB",
+    "originalFilename": "406-PRACTICAL 3.pdf",
+    "year": 2016,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 3",
+    "folderName": "2016-MARCH"
+  },
+  {
+    "driveFileId": "1xVylceJXQQNCxONjO34bSsLjVbgVngTm",
+    "originalFilename": "406-PRACTICAL 2.pdf",
+    "year": 2016,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 2",
+    "folderName": "2016-MARCH"
+  },
+  {
+    "driveFileId": "1_-bgV_uVGWKJoRjAyyMWIY0Um-J2XS8S",
+    "originalFilename": "406-PRACTICAL 1.pdf",
+    "year": 2016,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 1",
+    "folderName": "2016-MARCH"
+  },
+  {
+    "driveFileId": "10N_rPPVQDKSpefo89AD60CLm2C7p8wka",
+    "originalFilename": "404-.NET PROGRAMMING (NEW).pdf",
+    "year": 2016,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "404-.NET PROGRAMMING",
+    "folderName": "2016-MARCH"
+  },
+  {
+    "driveFileId": "1qIJMF-_9kOyu4b4nP6ATY_xTJkGUucqb",
+    "originalFilename": "405-WEB DESIGMIMG (NEW).pdf",
+    "year": 2016,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "405-WEB DESIGMIMG",
+    "folderName": "2016-MARCH"
+  },
+  {
+    "driveFileId": "1wSnGantRrWT_rvBWbKDULz0OiznrwqvH",
+    "originalFilename": "402-SW ENGINEERING-II (NEW).pdf",
+    "year": 2016,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "402-SW ENGINEERING-II",
+    "folderName": "2016-MARCH"
+  },
+  {
+    "driveFileId": "1CklFw3POTCEdz09dmEaQK90vmw5AeVtV",
+    "originalFilename": "404-.NET PROGRAMMING (OLD).pdf",
+    "year": 2016,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "404-.NET PROGRAMMING",
+    "folderName": "2016-MARCH"
+  },
+  {
+    "driveFileId": "1HVRxdskaZsnnC3gv9Zloy2AHdQzkSzOq",
+    "originalFilename": "401-INFORMATION SYSTEM (OLD).pdf",
+    "year": 2016,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "401-INFORMATION SYSTEM",
+    "folderName": "2016-MARCH"
+  },
+  {
+    "driveFileId": "1r2bpDee5HGco0mKrSmryUH-a2GTo4rJJ",
+    "originalFilename": "404-.NET PROGRAMMING.pdf",
+    "year": 2015,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "404-.NET PROGRAMMING",
+    "folderName": "2015-OCT"
+  },
+  {
+    "driveFileId": "1itU7PjuWtUK3cz0Syi3NW-gaYntrfqWw",
+    "originalFilename": "401-INFORMATION SYSTEM.pdf",
+    "year": 2015,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "401-INFORMATION SYSTEM",
+    "folderName": "2015-OCT"
+  },
+  {
+    "driveFileId": "1oXrS6ZWZvFHjLFULyh6MzOHRiQ69ncv1",
+    "originalFilename": "405-WEB DESIGNING.pdf",
+    "year": 2015,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "405-WEB DESIGNING",
+    "folderName": "2015-OCT"
+  },
+  {
+    "driveFileId": "13v8eoIJx8GS4CftQ-lOJ2s7cRwbXd6w6",
+    "originalFilename": "402-SW ENGINEERING II.pdf",
+    "year": 2015,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "402-SW ENGINEERING II",
+    "folderName": "2015-OCT"
+  },
+  {
+    "driveFileId": "1q9_RBLMFezjxt99Au8XdOEwkSeZUPN4n",
+    "originalFilename": "406-PRACTICAL 2.pdf",
+    "year": 2017,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 2",
+    "folderName": "2017-MARCH"
+  },
+  {
+    "driveFileId": "1emKMcwBq4GhMCv5ljGCEw6Kd-wIhAFEN",
+    "originalFilename": "404-.NET PROGRAMMING.pdf",
+    "year": 2017,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "404-.NET PROGRAMMING",
+    "folderName": "2017-MARCH"
+  },
+  {
+    "driveFileId": "1fK93yphOsf672PkP2xyoUc3ReFYB4aCM",
+    "originalFilename": "406-PRACTICAL 3.pdf",
+    "year": 2017,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 3",
+    "folderName": "2017-MARCH"
+  },
+  {
+    "driveFileId": "1zM35Bz258FIhkxqEA_kpR0wyFld9-23A",
+    "originalFilename": "406-PRACTICAL 1.pdf",
+    "year": 2017,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 1",
+    "folderName": "2017-MARCH"
+  },
+  {
+    "driveFileId": "1CHKK2yqHQCRRVWBD3WQ1pcuTYtvzqANE",
+    "originalFilename": "403-JAVA PROGRAMMIMNG LANG.pdf",
+    "year": 2017,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "403-JAVA PROGRAMMIMNG LANG",
+    "folderName": "2017-MARCH"
+  },
+  {
+    "driveFileId": "16gZDE89T82kr4-_08XbNN6Hc0Hg2g0lX",
+    "originalFilename": "402-SW ENGINEERING-II.pdf",
+    "year": 2017,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "402-SW ENGINEERING-II",
+    "folderName": "2017-MARCH"
+  },
+  {
+    "driveFileId": "1B0X5eWgeVNtRrKennVOCAdOoeDhGl2uv",
+    "originalFilename": "405-WEB DESIGNING.pdf",
+    "year": 2017,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "405-WEB DESIGNING",
+    "folderName": "2017-MARCH"
+  },
+  {
+    "driveFileId": "15jo-OnZfdu2uZZUXiTIqq-TwZUSfkRQF",
+    "originalFilename": "401-INFORMATION SYSTEMS.pdf",
+    "year": 2017,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "401-INFORMATION SYSTEMS",
+    "folderName": "2017-MARCH"
+  },
+  {
+    "driveFileId": "1tYFPiDxUoMqWDH70GwhjWAcIJWuNtqCb",
+    "originalFilename": "402-SW ENGINEERING-II.pdf",
+    "year": 2017,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "402-SW ENGINEERING-II",
+    "folderName": "2017-OCT"
+  },
+  {
+    "driveFileId": "11t76F422H9gHnHVSbvw0VaOg2pixFLE2",
+    "originalFilename": "404-.NET PROGRAMMING.pdf",
+    "year": 2017,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "404-.NET PROGRAMMING",
+    "folderName": "2017-OCT"
+  },
+  {
+    "driveFileId": "1VSL5F4iZ6Uxy-_bX3jprg4x8mUKetgO8",
+    "originalFilename": "405-WEB DESIGNING.pdf",
+    "year": 2017,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "405-WEB DESIGNING",
+    "folderName": "2017-OCT"
+  },
+  {
+    "driveFileId": "1eOEiwaDBlyKlzQM1IMBPq_f-YRWcFkJ5",
+    "originalFilename": "401-INFORMATION SYSTEMS.pdf",
+    "year": 2017,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "401-INFORMATION SYSTEMS",
+    "folderName": "2017-OCT"
+  },
+  {
+    "driveFileId": "1YWD-inppdSFmWnQ_y83SCOS8bnFdoaoN",
+    "originalFilename": "403-JAVA PROGRAMMING LANG.pdf",
+    "year": 2017,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "403-JAVA PROGRAMMING LANG",
+    "folderName": "2017-OCT"
+  },
+  {
+    "driveFileId": "1JjWzhwToMBilCrD1D0AhGrRzrmggZ78-",
+    "originalFilename": "403-JAVA PROGRAMMING LANG.pdf",
+    "year": 2018,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "403-JAVA PROGRAMMING LANG",
+    "folderName": "2018-MARCH"
+  },
+  {
+    "driveFileId": "12UnLa4COZHUaF-GSY4tJOfmXWa2_lhcF",
+    "originalFilename": "402-SW ENGINEERING-II.pdf",
+    "year": 2018,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "402-SW ENGINEERING-II",
+    "folderName": "2018-MARCH"
+  },
+  {
+    "driveFileId": "16PgQetBu0xG9Y8PWZPiakLz99Ps8DHM-",
+    "originalFilename": "401-INFORMATION SYSTEM.pdf",
+    "year": 2018,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "401-INFORMATION SYSTEM",
+    "folderName": "2018-MARCH"
+  },
+  {
+    "driveFileId": "1oAJlmTA-82lozjZ_r1qE61r0DhpsaI00",
+    "originalFilename": "404-.NET PROGRAMMING.pdf",
+    "year": 2018,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "404-.NET PROGRAMMING",
+    "folderName": "2018-MARCH"
+  },
+  {
+    "driveFileId": "10mfrCp8-hg9XL7xnZgeA7LQrU8mvpP68",
+    "originalFilename": "406-PRACTICAL 1.pdf",
+    "year": 2018,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 1",
+    "folderName": "2018-MARCH"
+  },
+  {
+    "driveFileId": "1nuMI_vSebs3IRYc1I5sQO6XxH6Ag2r1S",
+    "originalFilename": "405-WEB DESIGNING.pdf",
+    "year": 2018,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "405-WEB DESIGNING",
+    "folderName": "2018-MARCH"
+  },
+  {
+    "driveFileId": "1RGI7Isilu0zsr-BJhDiB6rZ0u5XeOufE",
+    "originalFilename": "406-PRACTICAL 2.pdf",
+    "year": 2018,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 2",
+    "folderName": "2018-MARCH"
+  },
+  {
+    "driveFileId": "1CIUy_M7xi99NlX98-Xm3FekHSqx7rJxX",
+    "originalFilename": "406-PRACTICAL 3.pdf",
+    "year": 2018,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 3",
+    "folderName": "2018-MARCH"
+  },
+  {
+    "driveFileId": "1lR-PKNlEd2FAxIbq_OGpzA4ix_Fzydco",
+    "originalFilename": "405-WEB DESIGNING(NEW).pdf",
+    "year": 2019,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "405-WEB DESIGNING",
+    "folderName": "2019-MARCH"
+  },
+  {
+    "driveFileId": "1Y4iDbZew2GXjwF7hAwNh6A-Ske3gnhaj",
+    "originalFilename": "401-INFORMATION SYSTEMS.pdf",
+    "year": 2019,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "401-INFORMATION SYSTEMS",
+    "folderName": "2019-MARCH"
+  },
+  {
+    "driveFileId": "1_ZS2B9AjXjRCEmqSEmrtHasGsLh7Q-5q",
+    "originalFilename": "406-PRACTICAL 2.pdf",
+    "year": 2019,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 2",
+    "folderName": "2019-MARCH"
+  },
+  {
+    "driveFileId": "1VLFEeNbpNW3uCiftFlJaQ4yHgud1cB8C",
+    "originalFilename": "403-JAVA PROGRAMMING LANGUAGE.pdf",
+    "year": 2019,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "403-JAVA PROGRAMMING LANGUAGE",
+    "folderName": "2019-MARCH"
+  },
+  {
+    "driveFileId": "1DyRfqiE0q_03nwRUnME0SueVv4Ep6Qj8",
+    "originalFilename": "406-PRACTICAL 1.pdf",
+    "year": 2019,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 1",
+    "folderName": "2019-MARCH"
+  },
+  {
+    "driveFileId": "1Y7mC-ZSgijlkpLIvS0_Es-b5HUPuPWsD",
+    "originalFilename": "402-SW ENGINEERING-II.pdf",
+    "year": 2019,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "402-SW ENGINEERING-II",
+    "folderName": "2019-MARCH"
+  },
+  {
+    "driveFileId": "1VRcldWRL_xk8-DRucQAPw24cnaXHSJA8",
+    "originalFilename": "406-PRACTICAL 3.pdf",
+    "year": 2019,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "406-PRACTICAL 3",
+    "folderName": "2019-MARCH"
+  },
+  {
+    "driveFileId": "1bG5g2GtnjGFAU6IoSb-UWgA4Nzkg722M",
+    "originalFilename": "404-NET PROGRAMMING.pdf",
+    "year": 2019,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "404-NET PROGRAMMING",
+    "folderName": "2019-MARCH"
+  },
+  {
+    "driveFileId": "1gDS0MRdY0HCZ6jXkT2tcdhGeqzLgkIZP",
+    "originalFilename": "405-WEB DESIGNING (OLD).pdf",
+    "year": 2019,
+    "session": "MARCH",
+    "parsedCode": null,
+    "parsedName": "405-WEB DESIGNING",
+    "folderName": "2019-MARCH"
+  },
+  {
+    "driveFileId": "1c2yjFKurQGT3cJ0DOMyLym3butJI-kAu",
+    "originalFilename": "401-INFORMATION SYSTEM.pdf",
+    "year": 2018,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "401-INFORMATION SYSTEM",
+    "folderName": "2018-OCT"
+  },
+  {
+    "driveFileId": "134fZypIuGXE5O5UTdqRH7XoYr4yGuGZ0",
+    "originalFilename": "403-JAVA PROGRAMMING LANG.pdf",
+    "year": 2018,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "403-JAVA PROGRAMMING LANG",
+    "folderName": "2018-OCT"
+  },
+  {
+    "driveFileId": "1Ze1O2jioDSsAlHAicsDd6Yqo6MCwR-ru",
+    "originalFilename": "402-SOFTWARE ENGINEERING II.pdf",
+    "year": 2018,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "402-SOFTWARE ENGINEERING II",
+    "folderName": "2018-OCT"
+  },
+  {
+    "driveFileId": "1k6uRhPDvugv3AVn2Pvb3oHBl4sVxhgvJ",
+    "originalFilename": "405-WEB DESIGNING.pdf",
+    "year": 2018,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "405-WEB DESIGNING",
+    "folderName": "2018-OCT"
+  },
+  {
+    "driveFileId": "1k9QmjJ2_scp1BtASIKWFt6nfeaCqv6U3",
+    "originalFilename": "404-.NET PROGRAMMING.pdf",
+    "year": 2018,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "404-.NET PROGRAMMING",
+    "folderName": "2018-OCT"
+  },
+  {
+    "driveFileId": "1ETAMoRP9KAs32HWCf6dYMulesrL5qqP-",
+    "originalFilename": "WEB DESIGNING(NEW).pdf",
+    "year": 2019,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "WEB DESIGNING",
+    "folderName": "2019-OCT"
+  },
+  {
+    "driveFileId": "1xKGDjY-DX4jEAHpy5NAqQuGCrzpeqhpm",
+    "originalFilename": "SOFTWARE ENGINEERING-II.pdf",
+    "year": 2019,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "SOFTWARE ENGINEERING-II",
+    "folderName": "2019-OCT"
+  },
+  {
+    "driveFileId": "1F8yYWCY-cdJrza5WO26KYM5ewR6-CFGa",
+    "originalFilename": ".NET PROGRAMMING.pdf",
+    "year": 2019,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": ".NET PROGRAMMING",
+    "folderName": "2019-OCT"
+  },
+  {
+    "driveFileId": "1IiT94IRB-DwkH8NXcj4FOQGbseKFnkUu",
+    "originalFilename": "JAVA PROGRAMMING LANGUAGE.pdf",
+    "year": 2019,
+    "session": "OCT",
+    "parsedCode": null,
+    "parsedName": "JAVA PROGRAMMING LANGUAGE",
+    "folderName": "2019-OCT"
+  },
+  {
+    "driveFileId": "12g0wsWij6xx1-7XdAozVqXJWVAJ2QYSm",
+    "originalFilename": "405-2-Mobile Application Development-2.pdf",
+    "year": 2023,
+    "session": "OCT-NOV",
+    "parsedCode": null,
+    "parsedName": "405-2-Mobile Application Development-2",
+    "folderName": "2023-OCT-NOV"
+  },
+  {
+    "driveFileId": "1eQFUceDF_Gl4Xxgxb_SICLM7UCYvdFGA",
+    "originalFilename": "401-Information System.pdf",
+    "year": 2023,
+    "session": "OCT-NOV",
+    "parsedCode": null,
+    "parsedName": "401-Information System",
+    "folderName": "2023-OCT-NOV"
+  },
+  {
+    "driveFileId": "11MQvOnidoTm5hn10yJxGiwvWeN6W83Qh",
+    "originalFilename": "404- .NET Programming.pdf",
+    "year": 2023,
+    "session": "OCT-NOV",
+    "parsedCode": null,
+    "parsedName": "404- .NET Programming",
+    "folderName": "2023-OCT-NOV"
+  },
+  {
+    "driveFileId": "1Fgp3dmAayBBNePY6LBXNiUXiNIKhLBB-",
+    "originalFilename": "403-Java Programming Language.pdf",
+    "year": 2023,
+    "session": "OCT-NOV",
+    "parsedCode": null,
+    "parsedName": "403-Java Programming Language",
+    "folderName": "2023-OCT-NOV"
+  },
+  {
+    "driveFileId": "1vFuqnAsAPYJwfA7jfr_b7vlgfc8trW01",
+    "originalFilename": "Practical-406.pdf",
+    "year": 2022,
+    "session": "APRIL",
+    "parsedCode": null,
+    "parsedName": "Practical-406",
+    "folderName": "2022-April"
+  },
+  {
+    "driveFileId": "1DIvcmOopDK7ptUySWlDLMRtSjMNlTNcW",
+    "originalFilename": "406-Practical.pdf",
+    "year": 2023,
+    "session": "APRIL",
+    "parsedCode": null,
+    "parsedName": "406-Practical",
+    "folderName": "2023-April"
+  },
+  {
+    "driveFileId": "1nGsPY42eimvrpo5mDpN5oafxhj1p08P1",
+    "originalFilename": "403-Java Programming.pdf",
+    "year": 2023,
+    "session": "APRIL",
+    "parsedCode": null,
+    "parsedName": "403-Java Programming",
+    "folderName": "2023-April"
+  },
+  {
+    "driveFileId": "17TlF2LiyIl6CZ8WXiyiyUObXPjL8Uiy2",
+    "originalFilename": "405-1-Web designing-2.pdf",
+    "year": 2023,
+    "session": "APRIL",
+    "parsedCode": null,
+    "parsedName": "405-1-Web designing-2",
+    "folderName": "2023-April"
+  },
+  {
+    "driveFileId": "1akVkY-rXOV-VcW8uPAMockAgvBak409V",
+    "originalFilename": "401-Information System.pdf",
+    "year": 2023,
+    "session": "APRIL",
+    "parsedCode": null,
+    "parsedName": "401-Information System",
+    "folderName": "2023-April"
+  },
+  {
+    "driveFileId": "16JuGcBGJPo3tiaYYYWwdJUqTAL6tyEM8",
+    "originalFilename": "404- .NET Programming.pdf",
+    "year": 2023,
+    "session": "APRIL",
+    "parsedCode": null,
+    "parsedName": "404- .NET Programming",
+    "folderName": "2023-April"
+  },
+  {
+    "driveFileId": "1SDyvrWWHr0u1Bd90uezSz9YEJq_isxCn",
+    "originalFilename": "405-2-Mobile Application Development-2.pdf",
+    "year": 2023,
+    "session": "APRIL",
+    "parsedCode": null,
+    "parsedName": "405-2-Mobile Application Development-2",
+    "folderName": "2023-April"
+  },
+  {
+    "driveFileId": "10NYnb8YzYYgwIyrRHEd7dOCgxkd4l9BX",
+    "originalFilename": "402-Internet of Things.pdf",
+    "year": 2023,
+    "session": "APRIL",
+    "parsedCode": null,
+    "parsedName": "402-Internet of Things",
+    "folderName": "2023-April"
+  },
+  {
+    "driveFileId": "1AGOeyOmoNthS5ib47Zux7qPXurZlpsjG",
+    "originalFilename": "406-Practical.pdf",
+    "year": 2024,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "406-Practical",
+    "folderName": "2024-March-April"
+  },
+  {
+    "driveFileId": "1X6JwjnAONjvnWSkt6QWdEG2Mp8ni5-nt",
+    "originalFilename": "403- Java Programming Language.pdf",
+    "year": 2024,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "403- Java Programming Language",
+    "folderName": "2024-March-April"
+  },
+  {
+    "driveFileId": "16kRewn4My3x37xmHcUDYXwrS2e717uij",
+    "originalFilename": "402- Internet of Things (IoT).pdf",
+    "year": 2024,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "402- Internet of Things",
+    "folderName": "2024-March-April"
+  },
+  {
+    "driveFileId": "1oOLw5S8m_pv4bsmP3hZ1-XN7ew0Mv7yB",
+    "originalFilename": "405-2-Mobile Application Development-2.pdf",
+    "year": 2024,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "405-2-Mobile Application Development-2",
+    "folderName": "2024-March-April"
+  },
+  {
+    "driveFileId": "1TS7ZShbEFe9W3CzRxtd6yr2rGQmyxHKZ",
+    "originalFilename": "405-1- Web Designing-2.pdf",
+    "year": 2024,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "405-1- Web Designing-2",
+    "folderName": "2024-March-April"
+  },
+  {
+    "driveFileId": "1K8VIvtJw0OCKthWVxescINyiVTsNxRji",
+    "originalFilename": "404- .NET Programming.pdf",
+    "year": 2024,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "404- .NET Programming",
+    "folderName": "2024-March-April"
+  },
+  {
+    "driveFileId": "10dFAQh7MM8y4Y7XMCOxjqIuIscxXHUTt",
+    "originalFilename": "401- Information System.pdf",
+    "year": 2024,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "401- Information System",
+    "folderName": "2024-March-April"
+  },
+  {
+    "driveFileId": "1KJg6CxeupVapae3nj9ZBp7MI4PsuCooz",
+    "originalFilename": "405-2- Mobile Application Development-2.pdf",
+    "year": 2023,
+    "session": "JULY",
+    "parsedCode": null,
+    "parsedName": "405-2- Mobile Application Development-2",
+    "folderName": "2023-July"
+  },
+  {
+    "driveFileId": "1tLlQWDvO7K2OBKoj-AoRTpN3VSuX4Ru2",
+    "originalFilename": "404- .NET Programming.pdf",
+    "year": 2023,
+    "session": "JULY",
+    "parsedCode": null,
+    "parsedName": "404- .NET Programming",
+    "folderName": "2023-July"
+  },
+  {
+    "driveFileId": "1-jwBwvf6wBmZ19OYq14DQPAaWtZMjFZT",
+    "originalFilename": "403- Java Programming Language.pdf",
+    "year": 2023,
+    "session": "JULY",
+    "parsedCode": null,
+    "parsedName": "403- Java Programming Language",
+    "folderName": "2023-July"
+  },
+  {
+    "driveFileId": "1L5W5ToQU31zhJ95aOxL3KGJUSmU8sCiO",
+    "originalFilename": "405- Web Designing-2.pdf",
+    "year": 2023,
+    "session": "JULY",
+    "parsedCode": null,
+    "parsedName": "405- Web Designing-2",
+    "folderName": "2023-July"
+  },
+  {
+    "driveFileId": "1LvYz4D5mpu59pqOeGbYpVuFEsnCDWffN",
+    "originalFilename": "402- Internet of Things.pdf",
+    "year": 2023,
+    "session": "JULY",
+    "parsedCode": null,
+    "parsedName": "402- Internet of Things",
+    "folderName": "2023-July"
+  },
+  {
+    "driveFileId": "1fbAgZH7u_-vXInAPf8s7XGv_roRPMRuI",
+    "originalFilename": "401-Information System.pdf",
+    "year": 2023,
+    "session": "JULY",
+    "parsedCode": null,
+    "parsedName": "401-Information System",
+    "folderName": "2023-July"
+  },
+  {
+    "driveFileId": "1UlF1EhScAnx8kOf5zm6DWmtYhQ1MhL7X",
+    "originalFilename": "403- Java Programming Language.pdf",
+    "year": null,
+    "session": "2025-SEPT_OCT",
+    "parsedCode": null,
+    "parsedName": "403- Java Programming Language",
+    "folderName": "2025-SEPT_OCT"
+  },
+  {
+    "driveFileId": "1IX8pJr4jz5Qzm9h-w9OIKk7LPH0jhPZi",
+    "originalFilename": "BHaratiya Mulaya Parampara-II (Gujarati).pdf",
+    "year": null,
+    "session": "2025-SEPT_OCT",
+    "parsedCode": null,
+    "parsedName": "BHaratiya Mulaya Parampara-II",
+    "folderName": "2025-SEPT_OCT"
+  },
+  {
+    "driveFileId": "1apzDqBHsAG488wqUVkT1iEXJftw61eAW",
+    "originalFilename": "405-01- Web Designing-2.pdf",
+    "year": null,
+    "session": "2025-SEPT_OCT",
+    "parsedCode": null,
+    "parsedName": "405-01- Web Designing-2",
+    "folderName": "2025-SEPT_OCT"
+  },
+  {
+    "driveFileId": "1_7g20vTCrRzbAdujoAg-WvF_FxJnPlia",
+    "originalFilename": "Bharatiya Mulya Parampara-II(English).pdf",
+    "year": null,
+    "session": "2025-SEPT_OCT",
+    "parsedCode": null,
+    "parsedName": "Bharatiya Mulya Parampara-II",
+    "folderName": "2025-SEPT_OCT"
+  },
+  {
+    "driveFileId": "1RGm_pt85fSWyitLmzd0CBd9uyjI4fKQA",
+    "originalFilename": "404- .NET Programming.pdf",
+    "year": null,
+    "session": "2025-SEPT_OCT",
+    "parsedCode": null,
+    "parsedName": "404- .NET Programming",
+    "folderName": "2025-SEPT_OCT"
+  },
+  {
+    "driveFileId": "1BLLxT_zqO1R5X7pSocRuqLkykx-ANalZ",
+    "originalFilename": "405-404-403-Practicals.pdf",
+    "year": 2025,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "405-404-403-Practicals",
+    "folderName": "2025-MARCH-APRIL"
+  },
+  {
+    "driveFileId": "1t6cv762pH0WId5R0cj6YtiEU12NqLYai",
+    "originalFilename": "407-VAC-Bharatiya Gyan Parampara Pravishti.pdf",
+    "year": 2025,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "407-VAC-Bharatiya Gyan Parampara Pravishti",
+    "folderName": "2025-MARCH-APRIL"
+  },
+  {
+    "driveFileId": "1WuSjCskEDevsqkVmYkSymUxV4bmOSVkO",
+    "originalFilename": "403-Major-1-Java Programming Language.pdf",
+    "year": 2025,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "403-Major-1-Java Programming Language",
+    "folderName": "2025-MARCH-APRIL"
+  },
+  {
+    "driveFileId": "1UP2FLIICpV_7QkEILPUoUKOfpApZuwBh",
+    "originalFilename": "402-01-Minor-Internet of Things.pdf",
+    "year": 2025,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "402-01-Minor-Internet of Things",
+    "folderName": "2025-MARCH-APRIL"
+  },
+  {
+    "driveFileId": "1IVp_1UtyCzeHHZFJD7yxBsEbt6d8ASMI",
+    "originalFilename": "404-Major-2- .NET Programming.pdf",
+    "year": 2025,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "404-Major-2- .NET Programming",
+    "folderName": "2025-MARCH-APRIL"
+  },
+  {
+    "driveFileId": "1CHIe8SMKLoC_4SILVCGNIHM-bStpLGO0",
+    "originalFilename": "405-02-Major-3-Mobile Application Development.pdf",
+    "year": 2025,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "405-02-Major-3-Mobile Application Development",
+    "folderName": "2025-MARCH-APRIL"
+  },
+  {
+    "driveFileId": "1j4XcFu_uvPeuTpLUMPpVYnfkacec-U-L",
+    "originalFilename": "403_java_practical day 4.pdf",
+    "year": 2025,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "403_java_practical day 4",
+    "folderName": "2025-MARCH-APRIL"
+  },
+  {
+    "driveFileId": "147KumxnFk67aabrJ2gejUN9U7XJXazYa",
+    "originalFilename": "405-01-Major-3-Web Designing-2-.pdf",
+    "year": 2025,
+    "session": "MARCH-APRIL",
+    "parsedCode": null,
+    "parsedName": "405-01-Major-3-Web Designing-2-",
+    "folderName": "2025-MARCH-APRIL"
+  }
+]

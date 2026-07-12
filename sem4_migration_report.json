@@ -1,0 +1,38 @@
+[
+  {
+    "ok": false,
+    "file": {
+      "mimeType": "application/pdf",
+      "id": "1VSL5F4iZ6Uxy-_bX3jprg4x8mUKetgO8",
+      "name": "405-WEB DESIGNING.pdf"
+    },
+    "reason": "storage upload failed: fetch failed"
+  },
+  {
+    "ok": false,
+    "file": {
+      "mimeType": "application/pdf",
+      "id": "16PgQetBu0xG9Y8PWZPiakLz99Ps8DHM-",
+      "name": "401-INFORMATION SYSTEM.pdf"
+    },
+    "reason": "storage upload failed: fetch failed"
+  },
+  {
+    "ok": false,
+    "file": {
+      "mimeType": "application/pdf",
+      "id": "1_7g20vTCrRzbAdujoAg-WvF_FxJnPlia",
+      "name": "Bharatiya Mulya Parampara-II(English).pdf"
+    },
+    "reason": "storage upload failed: fetch failed"
+  },
+  {
+    "ok": false,
+    "file": {
+      "mimeType": "application/pdf",
+      "id": "1j4XcFu_uvPeuTpLUMPpVYnfkacec-U-L",
+      "name": "403_java_practical day 4.pdf"
+    },
+    "reason": "no subject match for \"403_java_practical day 4.pdf\""
+  }
+]
