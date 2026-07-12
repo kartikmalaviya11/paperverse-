@@ -1,0 +1,29 @@
+[
+  {
+    "ok": false,
+    "file": {
+      "mimeType": "application/pdf",
+      "id": "1YLnA9peiE3ExeHbfWToy0mAmkWOPlXYz",
+      "name": "504-Web Framework & Services.pdf"
+    },
+    "reason": "storage upload failed: fetch failed"
+  },
+  {
+    "ok": false,
+    "file": {
+      "mimeType": "application/pdf",
+      "id": "1AM7EjY6HMouJ6cmdJ2uJX6xdtW7b_rDc",
+      "name": "504-Web Framework and Services.pdf"
+    },
+    "reason": "storage upload failed: fetch failed"
+  },
+  {
+    "ok": false,
+    "file": {
+      "mimeType": "application/pdf",
+      "id": "1MvT1aeDKElOPbRwT3dxyLS4cFX1-YZGm",
+      "name": "505-ASP .NET.pdf"
+    },
+    "reason": "storage upload failed: fetch failed"
+  }
+]
