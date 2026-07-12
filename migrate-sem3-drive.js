@@ -157,6 +157,7 @@ async function processFile(file, folderName, subjectIdMap) {
     {
       id: crypto.randomUUID(),
       year: year || 0,
+      session: session || 'UNKNOWN',
       fileUrl: publicUrlData.publicUrl,
       subjectId: subjectIdMap[code],
       sourceFileId: file.id,

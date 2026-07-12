@@ -153,10 +153,11 @@ async function processFile(file, folderName, subjectIdMap) {
 
   const { data: publicUrlData } = supabase.storage.from(BUCKET_NAME).getPublicUrl(storagePath);
 
-  const { error: paperError } = await supabase.from('Paper').upsert(
+ const { error: paperError } = await supabase.from('Paper').upsert(
     {
       id: crypto.randomUUID(),
       year: year || 0,
+      session: session || 'UNKNOWN',
       fileUrl: publicUrlData.publicUrl,
       subjectId: subjectIdMap[code],
       sourceFileId: file.id,

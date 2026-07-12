@@ -7,5 +7,23 @@
       "name": "205-PROG LANGU -I (OLD COURSE).pdf"
     },
     "reason": "no subject match for \"205-PROG LANGU -I (OLD COURSE).pdf\""
+  },
+  {
+    "ok": false,
+    "file": {
+      "mimeType": "application/pdf",
+      "id": "1IYwa7Pnp8r1c1uBbz3oedUf1PggHSMj3",
+      "name": "205-Major-2- Concepts of Relational Database Management Systems.pdf"
+    },
+    "reason": "storage upload failed: fetch failed"
+  },
+  {
+    "ok": false,
+    "file": {
+      "mimeType": "application/pdf",
+      "id": "1_YVo9Th8GGv4w46k1MNA1bNalXaNUbcn",
+      "name": "202- Computerized Financial Accounting.pdf"
+    },
+    "reason": "storage upload failed: fetch failed"
   }
 ]
