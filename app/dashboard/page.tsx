@@ -14,10 +14,18 @@ export const dynamic = 'force-dynamic'
 
 export default async function Dashboard() {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user }, error } = await supabase.auth.getUser()
 
   if (!user) {
-    redirect('/')
+    // TEMPORARY DEBUG: asli error dekhne ke liye redirect hata diya
+    return (
+      <div style={{ padding: '40px', color: 'white', fontFamily: 'sans-serif' }}>
+        <h1>🔴 No user found</h1>
+        <pre style={{ color: 'orange', whiteSpace: 'pre-wrap' }}>
+          {JSON.stringify(error, null, 2)}
+        </pre>
+      </div>
+    )
   }
 
   const subjects = await prisma.subject.findMany()
