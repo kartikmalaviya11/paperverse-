@@ -11,7 +11,6 @@ import {
   Clock, GraduationCap, FolderOpen, FileText, AlertTriangle, X
 } from "lucide-react";
 
-// --- Static Data ---
 const statsData = [
   { value: "VNSGU", label: "Exclusive Platform", icon: GraduationCap, color: "text-[#7C3AED]" },
   { value: "2015–26", label: "Paper Coverage", icon: Clock, color: "text-[#3B82F6]" },
@@ -38,7 +37,6 @@ const faqsData = [
   { q: "Is PaperVerse free?", a: "Yes, accessing past papers and basic MCQ practice is completely free for students." },
 ];
 
-// --- Counter Component ---
 const Counter = memo(({ end, suffix = "" }: { end: number; suffix?: string }) => {
   const [count, setCount] = useState(0);
 
@@ -68,7 +66,6 @@ const Counter = memo(({ end, suffix = "" }: { end: number; suffix?: string }) =>
 });
 Counter.displayName = "Counter";
 
-// --- FAQ Component ---
 const FAQItem = memo(({ q, a }: { q: string; a: string }) => {
   return (
     <details className="bg-[#18181B] border border-[#27272A] rounded-xl mb-4 group transition-colors hover:border-[#3f3f46] cursor-pointer">
@@ -84,9 +81,6 @@ const FAQItem = memo(({ q, a }: { q: string; a: string }) => {
 });
 FAQItem.displayName = "FAQItem";
 
-// --- Login Error Banner ---
-// Ye /auth/callback se ?error=auth_failed leke wapas aaye to dikhta hai.
-// URL se param bhi clean kar deta hai taaki refresh pe dobara na dikhe.
 const LoginErrorBanner = memo(() => {
   const [show, setShow] = useState(false);
 
@@ -120,11 +114,45 @@ const LoginErrorBanner = memo(() => {
 });
 LoginErrorBanner.displayName = "LoginErrorBanner";
 
+type AuthState = {
+  loading: boolean;
+  email: string | null;
+  initial: string;
+  avatarUrl: string | null;
+};
+
 const Navbar = memo(() => {
   const [isLoggingIn, setIsLoggingIn] = useState(false);
+  const [auth, setAuth] = useState<AuthState>({
+    loading: true,
+    email: null,
+    initial: "",
+    avatarUrl: null,
+  });
+
+  useEffect(() => {
+    const supabase = createClient();
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      if (user) {
+        const name =
+          (user.user_metadata?.full_name as string | undefined) ??
+          (user.user_metadata?.name as string | undefined) ??
+          user.email?.split("@")[0] ??
+          "S";
+        setAuth({
+          loading: false,
+          email: user.email ?? null,
+          initial: name.charAt(0).toUpperCase(),
+          avatarUrl: (user.user_metadata?.avatar_url as string | undefined) ?? null,
+        });
+      } else {
+        setAuth({ loading: false, email: null, initial: "", avatarUrl: null });
+      }
+    });
+  }, []);
 
   const handleLoginClick = async () => {
-    if (isLoggingIn) return; // dobara click ko block kar diya — yehi asli fix hai
+    if (isLoggingIn) return;
     setIsLoggingIn(true);
     const supabase = createClient();
     const { error } = await supabase.auth.signInWithOAuth({
@@ -133,7 +161,7 @@ const Navbar = memo(() => {
         redirectTo: `${window.location.origin}/auth/callback`,
       },
     });
-    if (error) setIsLoggingIn(false); // sirf fail hone par re-enable karo
+    if (error) setIsLoggingIn(false);
   };
 
   const handleGetStarted = () => {
@@ -156,13 +184,36 @@ const Navbar = memo(() => {
           <a href="#faq" className="hover:text-[#FAFAFA] transition-colors focus:outline-none focus-visible:text-[#FAFAFA]">FAQ</a>
         </div>
         <div className="flex items-center gap-4">
-          <button 
-            onClick={handleLoginClick}
-            disabled={isLoggingIn}
-            className="text-sm text-[#A1A1AA] hover:text-[#FAFAFA] font-medium transition-colors hidden sm:block focus:outline-none focus-visible:text-[#FAFAFA] disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            {isLoggingIn ? "Redirecting…" : "Log in"}
-          </button>
+          {!auth.loading && auth.email ? (
+            <Link
+              href="/dashboard"
+              className="hidden sm:flex items-center gap-2 text-sm text-[#A1A1AA] hover:text-[#FAFAFA] font-medium transition-colors focus:outline-none focus-visible:text-[#FAFAFA]"
+            >
+              {auth.avatarUrl ? (
+                <Image
+                  src={auth.avatarUrl}
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="rounded-full border border-[#27272A]"
+                  unoptimized
+                />
+              ) : (
+                <span className="w-6 h-6 rounded-full bg-[#7C3AED]/20 border border-[#7C3AED]/30 flex items-center justify-center text-[10px] font-semibold text-[#A78BFA]">
+                  {auth.initial}
+                </span>
+              )}
+              Dashboard
+            </Link>
+          ) : (
+            <button
+              onClick={handleLoginClick}
+              disabled={isLoggingIn || auth.loading}
+              className="text-sm text-[#A1A1AA] hover:text-[#FAFAFA] font-medium transition-colors hidden sm:block focus:outline-none focus-visible:text-[#FAFAFA] disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {isLoggingIn ? "Redirecting…" : "Log in"}
+            </button>
+          )}
           <button 
             onClick={handleGetStarted}
             className="bg-[#FAFAFA] text-[#09090B] px-4 py-2 rounded-full text-sm font-semibold hover:bg-white transition-all shadow-[0_0_10px_rgba(250,250,250,0.1)] active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7C3AED]"

@@ -95,6 +95,7 @@ export default async function Dashboard() {
                   width={32}
                   height={32}
                   className="rounded-full border border-[#27272A]"
+                  unoptimized
                 />
               ) : (
                 <div className="w-8 h-8 rounded-full bg-[#7C3AED]/20 border border-[#7C3AED]/30 flex items-center justify-center text-sm font-semibold text-[#A78BFA]">
@@ -109,49 +110,53 @@ export default async function Dashboard() {
       </header>
 
       <main className="flex-1 max-w-6xl mx-auto px-6 py-12 w-full">
-        {/* Welcome hero */}
-        <section className="relative mb-12 rounded-3xl border border-[#27272A] bg-[#18181B] overflow-hidden">
+        {/* Welcome hero — purely personal, no numbers here */}
+        <section className="relative mb-6 rounded-3xl border border-[#27272A] bg-[#18181B] overflow-hidden">
           <div className="absolute -top-24 -left-24 w-72 h-72 bg-[#7C3AED]/15 rounded-full blur-[100px] pointer-events-none" />
           <div className="absolute -bottom-24 -right-24 w-72 h-72 bg-[#3B82F6]/10 rounded-full blur-[100px] pointer-events-none" />
 
-          <div className="relative z-10 p-8 sm:p-10 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
-            <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#27272A]/50 border border-[#27272A] w-fit mb-4">
-                <span className="flex h-2 w-2 rounded-full bg-[#22C55E]" aria-hidden="true" />
-                <span className="text-xs font-medium text-[#A1A1AA]">Signed in</span>
-              </div>
-              <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
-                Welcome back, {firstName}
-              </h1>
-              <p className="text-[#A1A1AA] mt-2 max-w-md">
-                Everything you need for your VNSGU BCA exams, organized by semester.
-              </p>
+          <div className="relative z-10 p-8 sm:p-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#27272A]/50 border border-[#27272A] w-fit mb-4">
+              <span className="flex h-2 w-2 rounded-full bg-[#22C55E]" aria-hidden="true" />
+              <span className="text-xs font-medium text-[#A1A1AA]">Signed in</span>
             </div>
-
-            {!loadFailed && subjects.length > 0 && (
-              <div className="flex gap-6 sm:gap-10">
-                <div>
-                  <p className="text-3xl font-bold text-[#7C3AED]">{semesterNumbers.length}</p>
-                  <p className="text-xs text-[#A1A1AA] mt-1 flex items-center gap-1.5">
-                    <Layers className="w-3.5 h-3.5" aria-hidden="true" /> Semesters
-                  </p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-[#3B82F6]">{subjects.length}</p>
-                  <p className="text-xs text-[#A1A1AA] mt-1 flex items-center gap-1.5">
-                    <GraduationCap className="w-3.5 h-3.5" aria-hidden="true" /> Subjects
-                  </p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-[#22C55E]">{totalPapers}</p>
-                  <p className="text-xs text-[#A1A1AA] mt-1 flex items-center gap-1.5">
-                    <FileText className="w-3.5 h-3.5" aria-hidden="true" /> Papers
-                  </p>
-                </div>
-              </div>
-            )}
+            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
+              Welcome back, {firstName}
+            </h1>
+            <p className="text-[#A1A1AA] mt-2 max-w-md">
+              Everything you need for your VNSGU BCA exams, organized by semester.
+            </p>
           </div>
         </section>
+
+        {/* Platform totals — clearly labeled as site-wide, not "your" numbers */}
+        {!loadFailed && subjects.length > 0 && (
+          <div className="mb-12">
+            <p className="text-xs font-medium text-[#A1A1AA] uppercase tracking-wider mb-3">
+              PaperVerse, at a glance
+            </p>
+            <div className="grid grid-cols-3 gap-4">
+              <div className="bg-[#18181B] border border-[#27272A] rounded-xl p-4">
+                <p className="text-2xl font-bold text-[#7C3AED]">{semesterNumbers.length}</p>
+                <p className="text-xs text-[#A1A1AA] mt-1 flex items-center gap-1.5">
+                  <Layers className="w-3.5 h-3.5" aria-hidden="true" /> Semesters covered
+                </p>
+              </div>
+              <div className="bg-[#18181B] border border-[#27272A] rounded-xl p-4">
+                <p className="text-2xl font-bold text-[#3B82F6]">{subjects.length}</p>
+                <p className="text-xs text-[#A1A1AA] mt-1 flex items-center gap-1.5">
+                  <GraduationCap className="w-3.5 h-3.5" aria-hidden="true" /> Subjects listed
+                </p>
+              </div>
+              <div className="bg-[#18181B] border border-[#27272A] rounded-xl p-4">
+                <p className="text-2xl font-bold text-[#22C55E]">{totalPapers}</p>
+                <p className="text-xs text-[#A1A1AA] mt-1 flex items-center gap-1.5">
+                  <FileText className="w-3.5 h-3.5" aria-hidden="true" /> Papers available
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Content */}
         {loadFailed ? (

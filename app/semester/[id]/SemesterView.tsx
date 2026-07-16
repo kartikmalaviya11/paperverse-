@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowLeft, BookOpen, Calendar, Download, FileText } from 'lucide-react';
+import { createClient } from '@/utils/supabase/client';
 import type { Subject } from './page';
 
 export default function SemesterView({
@@ -14,6 +15,16 @@ export default function SemesterView({
   subjects: Subject[];
 }) {
   const [activePill, setActivePill] = useState<string>('all');
+  // Default '/' — updated to '/dashboard' once we confirm a session exists,
+  // so a logged-in user's "Home" doesn't dump them back on the marketing page.
+  const [homeHref, setHomeHref] = useState('/');
+
+  useEffect(() => {
+    const supabase = createClient();
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      if (user) setHomeHref('/dashboard');
+    });
+  }, []);
 
   const totalPapers = subjects.reduce((sum, s) => sum + s.Paper.length, 0);
 
@@ -36,7 +47,7 @@ export default function SemesterView({
       <header className="sticky top-0 z-40 bg-[#09090B]/90 backdrop-blur-md border-b border-[#27272A]">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center gap-4">
           <Link
-            href="/"
+            href={homeHref}
             className="flex items-center gap-2 text-sm text-[#A1A1AA] hover:text-[#FAFAFA] transition-colors"
           >
             <ArrowLeft className="w-4 h-4" aria-hidden="true" />
@@ -126,7 +137,7 @@ export default function SemesterView({
                 ) : (
                   <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {subject.Paper.map((paper) => (
-                      <a
+                      
                         key={paper.id}
                         href={paper.fileUrl}
                         target="_blank"
