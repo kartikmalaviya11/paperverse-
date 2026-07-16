@@ -8,7 +8,7 @@ import { createClient } from "@/utils/supabase/client";
 import { 
   Search, BookOpen, Database, Cpu, 
   ChevronDown, ArrowRight, CheckCircle2, 
-  Clock, GraduationCap, FolderOpen, FileText
+  Clock, GraduationCap, FolderOpen, FileText, AlertTriangle, X
 } from "lucide-react";
 
 // --- Static Data ---
@@ -84,16 +84,56 @@ const FAQItem = memo(({ q, a }: { q: string; a: string }) => {
 });
 FAQItem.displayName = "FAQItem";
 
+// --- Login Error Banner ---
+// Ye /auth/callback se ?error=auth_failed leke wapas aaye to dikhta hai.
+// URL se param bhi clean kar deta hai taaki refresh pe dobara na dikhe.
+const LoginErrorBanner = memo(() => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("error") === "auth_failed") {
+      setShow(true);
+      window.history.replaceState({}, "", window.location.pathname);
+    }
+  }, []);
+
+  if (!show) return null;
+
+  return (
+    <div className="fixed top-16 inset-x-0 z-40 px-4">
+      <div className="max-w-xl mx-auto bg-[#18181B] border border-red-500/30 rounded-xl px-4 py-3 flex items-center gap-3 shadow-lg mt-3">
+        <AlertTriangle className="w-4 h-4 text-red-400 flex-shrink-0" aria-hidden="true" />
+        <p className="text-sm text-[#A1A1AA] flex-1">
+          Login complete nahi ho paaya — ek hi baar &quot;Log in&quot; pe click karke thoda wait karo, phir try karo.
+        </p>
+        <button
+          onClick={() => setShow(false)}
+          aria-label="Dismiss"
+          className="text-[#A1A1AA] hover:text-[#FAFAFA] flex-shrink-0"
+        >
+          <X className="w-4 h-4" aria-hidden="true" />
+        </button>
+      </div>
+    </div>
+  );
+});
+LoginErrorBanner.displayName = "LoginErrorBanner";
 
 const Navbar = memo(() => {
+  const [isLoggingIn, setIsLoggingIn] = useState(false);
+
   const handleLoginClick = async () => {
+    if (isLoggingIn) return; // dobara click ko block kar diya — yehi asli fix hai
+    setIsLoggingIn(true);
     const supabase = createClient();
-    await supabase.auth.signInWithOAuth({
+    const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
         redirectTo: `${window.location.origin}/auth/callback`,
       },
     });
+    if (error) setIsLoggingIn(false); // sirf fail hone par re-enable karo
   };
 
   const handleGetStarted = () => {
@@ -118,9 +158,10 @@ const Navbar = memo(() => {
         <div className="flex items-center gap-4">
           <button 
             onClick={handleLoginClick}
-            className="text-sm text-[#A1A1AA] hover:text-[#FAFAFA] font-medium transition-colors hidden sm:block focus:outline-none focus-visible:text-[#FAFAFA]"
+            disabled={isLoggingIn}
+            className="text-sm text-[#A1A1AA] hover:text-[#FAFAFA] font-medium transition-colors hidden sm:block focus:outline-none focus-visible:text-[#FAFAFA] disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Log in
+            {isLoggingIn ? "Redirecting…" : "Log in"}
           </button>
           <button 
             onClick={handleGetStarted}
@@ -311,7 +352,6 @@ const SemesterGrid = memo(() => {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {semestersData.map((sem) => (
-            // Yahan Link tag laga diya hai jo page ko redirect karega
             <Link href={`/semester/${sem.num}`} key={sem.num} className="block w-full outline-none">
               <motion.div 
                 whileHover={{ scale: 1.02, y: -2 }} 
@@ -400,6 +440,7 @@ export default function Home() {
   return (
     <div className="min-h-[100svh] bg-[#09090B] text-[#FAFAFA] selection:bg-[#7C3AED]/30 scroll-smooth flex flex-col">
       <Navbar />
+      <LoginErrorBanner />
       <main className="flex-1">
         <Hero />
         <Stats />
