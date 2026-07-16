@@ -4,55 +4,72 @@ import { redirect } from 'next/navigation'
 import LogoutButton from '@/components/LogoutButton'
 
 type SubjectRow = {
-  id: string;
-  name: string;
-  code: string;
-  semester: number;
-};
+  id: string
+  name: string
+  code: string
+  semester: number
+}
 
 export const dynamic = 'force-dynamic'
 
 export default async function Dashboard() {
   const supabase = await createClient()
-  const { data: { user }, error } = await supabase.auth.getUser()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
 
   if (!user) {
-    // TEMPORARY DEBUG: asli error dekhne ke liye redirect hata diya
-    return (
-      <div style={{ padding: '40px', color: 'white', fontFamily: 'sans-serif' }}>
-        <h1>🔴 No user found</h1>
-        <pre style={{ color: 'orange', whiteSpace: 'pre-wrap' }}>
-          {JSON.stringify(error, null, 2)}
-        </pre>
-      </div>
-    )
+    redirect('/')
   }
 
-  const subjects = await prisma.subject.findMany()
+  let subjects: SubjectRow[] = []
+  let loadFailed = false
+
+  try {
+    subjects = await prisma.subject.findMany({
+      orderBy: [{ semester: 'asc' }, { code: 'asc' }],
+    })
+  } catch (err) {
+    console.error('🔥 DASHBOARD: failed to load subjects:', err)
+    loadFailed = true
+  }
 
   return (
-    <div style={{ padding: '40px', color: 'white', fontFamily: 'sans-serif' }}>
-      <h1>🚀 Welcome to PaperVerse!</h1>
-      <p style={{ color: 'gray' }}>{user.email} ke roop mein login ho gaya hai.</p>
-
-      <h2 style={{ marginTop: '40px', borderBottom: '1px solid #333', paddingBottom: '10px' }}>
-        VNSGU BCA Subjects
-      </h2>
-
-      <div style={{ display: 'flex', gap: '20px', marginTop: '20px', flexWrap: 'wrap' }}>
-        {subjects.map((sub: SubjectRow) => (
-          <div
-            key={sub.id}
-            style={{ border: '1px solid #333', padding: '20px', borderRadius: '10px', background: '#111', minWidth: '250px' }}
-          >
-            <h3 style={{ margin: '0 0 10px 0' }}>{sub.name}</h3>
-            <p style={{ margin: 0, color: '#888' }}>Code: {sub.code}</p>
-            <p style={{ margin: '5px 0 0 0', color: '#00ff88' }}>Semester {sub.semester}</p>
+    <div className="min-h-[100svh] bg-[#09090B] text-[#FAFAFA] px-6 py-12">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-10">
+          <div>
+            <h1 className="text-3xl font-bold tracking-tight">Welcome to PaperVerse 🚀</h1>
+            <p className="text-[#A1A1AA] mt-1">Logged in as {user.email}</p>
           </div>
-        ))}
-      </div>
+          <LogoutButton />
+        </div>
 
-      <LogoutButton />
+        <h2 className="text-xl font-semibold border-b border-[#27272A] pb-3 mb-6">
+          VNSGU BCA Subjects
+        </h2>
+
+        {loadFailed ? (
+          <p className="text-[#A1A1AA] text-sm">
+            Subjects load nahi ho paaye abhi — thodi der mein refresh karke dobara try karo.
+          </p>
+        ) : subjects.length === 0 ? (
+          <p className="text-[#A1A1AA] text-sm">Koi subject abhi database mein nahi hai.</p>
+        ) : (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {subjects.map((sub) => (
+              <div
+                key={sub.id}
+                className="border border-[#27272A] bg-[#18181B] rounded-2xl p-5 hover:border-[#7C3AED]/50 transition-colors"
+              >
+                <h3 className="font-semibold text-[#FAFAFA]">{sub.name}</h3>
+                <p className="text-sm text-[#A1A1AA] mt-1">Code: {sub.code}</p>
+                <p className="text-sm text-[#22C55E] mt-1">Semester {sub.semester}</p>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   )
 }
